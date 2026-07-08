@@ -10,7 +10,7 @@ async function uploadFile() {
   const formData = new FormData();
 formData.append('file', file);
 
-const backendUrl = 'https://notes-summarizer.onrender.com/summarize';
+const backendUrl = '/summarize';
   try {
     const response = await fetch(backendUrl, {
       method: 'POST',
