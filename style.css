@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: gold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+button {
+  background: gold;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ffd700;
+}
+
+#summaryBox {
+  margin-top: 30px;
+  text-align: left;
+  display: inline-block;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
