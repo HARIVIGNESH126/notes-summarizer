@@ -8,9 +8,9 @@ async function uploadFile() {
   }
 
   const formData = new FormData();
-  formData.append('file', file);
-  const backendUrl = 'http://127.0.0.1:5000/summarize';
+formData.append('file', file);
 
+const backendUrl = 'https://notes-summarizer.onrender.com/summarize';
   try {
     const response = await fetch(backendUrl, {
       method: 'POST',
@@ -42,6 +42,6 @@ async function uploadFile() {
     });
   } catch (error) {
     console.error('Error:', error);
-    alert('Failed to summarize notes. Is the backend server running on http://127.0.0.1:5000?');
+    alert('Failed to summarize notes. Please check the backend server.');
   }
 }
